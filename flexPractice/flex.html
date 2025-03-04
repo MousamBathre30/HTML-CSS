@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>flex box problem</title>
+</head>
+<body>
+    <header class = "headerContainer"></header>
+     <div class = "mainContentItem">
+     <section class = "mainContentItem">
+     <article>
+        <h2> First article</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab labore ea dolores, modi aut minima harum placeat quasi 
+            repellendus possimus veritatis, numquam perferendis iure est voluptatum. Porro quidem neque fugiat.</p>
+
+     </article>
+     <article>
+        <h2>Second article</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quas perferendis tempora illum? Fugit asperiores saepe quos 
+            deserunt, quod, labore quia eaque, cupiditate voluptatibus ullam unde neque sed voluptatum provident?</p>
+     </article>
+     <article>
+        <h2>Third Article</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis est similique dolor perferendis quisquam vitae tenetur, reprehenderit veniam vero temporibus repellendus
+             inventore, quasi aliquam esse cupiditate amet dicta laudantium provident!</p>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eligendi quas, fuga velit ipsam esse accusamus nesciunt unde dolores assumenda? 
+            Sunt ex voluptate amet iste perspiciatis expedita aliquam vero adipisci!</p>    
+     </article>
+    </section>
+
+  <sidebar class = "sideBarItem sideBarLeftItem"></sidebar>
+  <sidebar class=" sideBarItem sideBarRightItem"></sidebar>
+</div>
+<footer class = "footerContainer"> Footer</footer> 
+<script type = "text/javascript"></script>
+
+<style>
+    body{
+        padding:2em;
+    }
+    .headerContainer{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: tomato;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .footerContainer{
+        display: flex;
+        flex-flow:column wrap;
+        align-content: center;
+        background: lightgreen;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .mainContainer{
+        display: flex;
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+    }
+    .mainContentItem{
+        text-align: left;
+        background: deepskyblue;
+    }
+    article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+    }
+
+    .sideBarLeftItem{
+        background: gold;
+    }
+    .sideBarRightItem{
+        flex: 1 0 0;
+        border: 0px solid green;
+    }
+    .mainContentItem{
+        flex: 3 0px;
+    }
+    .sideBarLeftItem{
+        order: 1;
+    }
+    .mainContentItem{
+        order: 3;
+    }
+    .sideBarRightItem{
+        order: 3;
+    }
+</style>
+</body>
+</html>
