@@ -1,0 +1,28 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+  }
+  .cards img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+  }
+</style>
+<main class="cards">
+  <img src="/pix/samples/23m.jpg" alt="Sample photo">
+  <img src="/pix/samples/24m.jpg" alt="Sample photo">
+  <img src="/pix/samples/22m.jpg" alt="Sample photo">
+  <img src="/pix/samples/28m.jpg" alt="Sample photo">
+  <img src="/pix/samples/29m.jpg" alt="Sample photo">
+  <img src="/pix/samples/30m.jpg" alt="Sample photo">
+  <img src="/pix/samples/27m.jpg" alt="Sample photo">
+  <img src="/pix/samples/32m.jpg" alt="Sample photo">
+  <img src="/pix/samples/33m.jpg" alt="Sample photo">
+</main>
